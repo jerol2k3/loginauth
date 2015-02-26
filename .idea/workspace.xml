@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="aa5613bc-7873-415e-b1db-756acf3f9a29" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/User.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/login.php" afterPath="$PROJECT_DIR$/login.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/User.php" afterPath="$PROJECT_DIR$/User.php" />
     </list>
     <ignored path="loginauth.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -59,12 +58,12 @@
       <file leaf-file-name="User.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/User.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.4848485" vertical-offset="8" max-vertical-offset="1258">
-              <caret line="24" column="85" selection-start-line="24" selection-start-column="85" selection-end-line="24" selection-end-column="85" />
+            <state vertical-scroll-proportion="0.46424243" vertical-offset="8" max-vertical-offset="1275">
+              <caret line="23" column="32" selection-start-line="23" selection-start-column="32" selection-end-line="23" selection-end-column="32" />
               <folding>
                 <element signature="e#6#92#0#PHP" expanded="true" />
-                <marker date="1424938548933" expanded="true" signature="1255:1312" placeholder="INSERT INTO ..." />
-                <marker date="1424938548933" expanded="true" signature="1628:1686" placeholder="SELECT * FRO..users..." />
+                <marker date="1424938790207" expanded="true" signature="1288:1345" placeholder="INSERT INTO ..." />
+                <marker date="1424938790207" expanded="true" signature="1661:1719" placeholder="SELECT * FRO..users..." />
               </folding>
             </state>
           </provider>
@@ -257,12 +256,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/User.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4848485" vertical-offset="8" max-vertical-offset="1258">
-          <caret line="24" column="85" selection-start-line="24" selection-start-column="85" selection-end-line="24" selection-end-column="85" />
+        <state vertical-scroll-proportion="0.46424243" vertical-offset="8" max-vertical-offset="1275">
+          <caret line="23" column="32" selection-start-line="23" selection-start-column="32" selection-end-line="23" selection-end-column="32" />
           <folding>
             <element signature="e#6#92#0#PHP" expanded="true" />
-            <marker date="1424938548933" expanded="true" signature="1255:1312" placeholder="INSERT INTO ..." />
-            <marker date="1424938548933" expanded="true" signature="1628:1686" placeholder="SELECT * FRO..users..." />
+            <marker date="1424938790207" expanded="true" signature="1288:1345" placeholder="INSERT INTO ..." />
+            <marker date="1424938790207" expanded="true" signature="1661:1719" placeholder="SELECT * FRO..users..." />
           </folding>
         </state>
       </provider>

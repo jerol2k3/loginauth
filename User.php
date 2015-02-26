@@ -21,6 +21,7 @@ class User {
         $this->dbuser = $url["user"];
         $this->dbpass = $url["pass"];
         $this->dbname = substr($url["path"], 1);
+        var_dump($this->dbname);
 
         $this->dburl = "mysql:host=" + $this->dbhost + ";dbname=" + $this->dbname + ";charset=utf8";
         $this->connect();
