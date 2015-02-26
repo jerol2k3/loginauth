@@ -59,11 +59,11 @@
         <entry file="file://$PROJECT_DIR$/User.php">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.32" vertical-offset="246" max-vertical-offset="1360">
-              <caret line="30" column="29" selection-start-line="30" selection-start-column="29" selection-end-line="30" selection-end-column="29" />
+              <caret line="30" column="31" selection-start-line="30" selection-start-column="31" selection-end-line="30" selection-end-column="31" />
               <folding>
                 <element signature="e#6#92#0#PHP" expanded="true" />
-                <marker date="1424939298009" expanded="true" signature="1420:1477" placeholder="INSERT INTO ..." />
-                <marker date="1424939298009" expanded="true" signature="1793:1851" placeholder="SELECT * FRO..users..." />
+                <marker date="1424939458874" expanded="true" signature="1420:1477" placeholder="INSERT INTO ..." />
+                <marker date="1424939458874" expanded="true" signature="1793:1851" placeholder="SELECT * FRO..users..." />
               </folding>
             </state>
           </provider>
@@ -257,11 +257,11 @@
     <entry file="file://$PROJECT_DIR$/User.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.32" vertical-offset="246" max-vertical-offset="1360">
-          <caret line="30" column="29" selection-start-line="30" selection-start-column="29" selection-end-line="30" selection-end-column="29" />
+          <caret line="30" column="31" selection-start-line="30" selection-start-column="31" selection-end-line="30" selection-end-column="31" />
           <folding>
             <element signature="e#6#92#0#PHP" expanded="true" />
-            <marker date="1424939298009" expanded="true" signature="1420:1477" placeholder="INSERT INTO ..." />
-            <marker date="1424939298009" expanded="true" signature="1793:1851" placeholder="SELECT * FRO..users..." />
+            <marker date="1424939458874" expanded="true" signature="1420:1477" placeholder="INSERT INTO ..." />
+            <marker date="1424939458874" expanded="true" signature="1793:1851" placeholder="SELECT * FRO..users..." />
           </folding>
         </state>
       </provider>
