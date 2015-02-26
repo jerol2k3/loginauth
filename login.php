@@ -1,3 +1,10 @@
+<?php
+    include "User.php";
+    $user = new User();
+    #$user->register("jerol@lycos.com", "@dm1n");
+    $user->login("jerol@lycos.com", "@dm1n");
+?>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
