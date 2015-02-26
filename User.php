@@ -50,7 +50,7 @@ class User {
         try {
             $stmt = $this->db->prepare("INSERT INTO users(email, password, logindatetime, ipaddress, loginattempt) ".
                                        "VALUES(?, PASSWORD(?), ?, ?, ?)");
-            $stmt->execute(array($email, $password));
+            $stmt->execute(array($email, $password, $logindatetime, $ipaddress, $loginattempt));
         }
         catch(PDOException $ex){
             echo "An Error occurred error inserting record!";
