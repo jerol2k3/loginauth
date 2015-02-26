@@ -22,13 +22,8 @@ class User {
         $this->dbpass = $url["pass"];
         $this->dbname = substr($url["path"], 1);
 
-        var_dump($this->dbhost);
-        var_dump($this->dbuser);
-        var_dump($this->dbpass);
-        var_dump($this->dbname);
-
         $this->dburl = "mysql:host=" . $this->dbhost . ";dbname=" . $this->dbname . ";charset=utf8";
-        var_dump($this->dburl);
+        
         $this->connect();
     }
 
