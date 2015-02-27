@@ -163,7 +163,7 @@ class User {
         setText('Login Lockout!')->
         setHtml('<strong>Account ' . $email .
                 ' has been locked out for about ' . $timelock .
-                ' using ip address ' . $ipaddress . ' !</strong>');
+                ' minutes using ip address ' . $ipaddress . '!</strong>');
         $response = $sendgrid->send($message);
         var_dump($response);
 	}
