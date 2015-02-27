@@ -10,9 +10,14 @@
     	$logindatetime = date("Y-m-d H:i:s", time());
 		$ipaddress = get_client_ip();
 		$logininfo = $user->getlogininfo($_POST['email']);
-		$loginattempt = $logininfo[0]['loginattempt'];
-		$previouslogindatetime = $logininfo[0]['logindatetime'];
-		$previousipaddress = $logininfo[0]['ipaddress'];
+        $loginattempt = 0;
+        $previouslogindatetime = $logindatetime;
+        $previousipaddress = $ipaddress;
+        if(count($logininfo) > 0) {
+            $loginattempt = $logininfo[0]['loginattempt'];
+            $previouslogindatetime = $logininfo[0]['logindatetime'];
+            $previousipaddress = $logininfo[0]['ipaddress'];
+        }
 		$block = FALSE;
 		$datetimediff = strtotime($logindatetime) - strtotime($previouslogindatetime);
 		$datetimediff = $datetimediff / 3600;
@@ -22,7 +27,9 @@
 			if($user->error != ""){
 				$user->error .= "<br />";
 			}
-			$user->error .= "Your account is block for " . strval(round((1 - $datetimediff) * 60, 0)) . " minutes."; 
+            $timelock = strval(round((1 - $datetimediff) * 60, 0));
+			$user->error .= "Your account is block for " . $timelock . " minutes.";
+            $user->sendnotification($_POST['email'], $ipaddress, $timelock);
 		}
 		elseif($user->validate($_POST['email'], $_POST['password'])){
     		if($user->exists($_POST['email'])){    			

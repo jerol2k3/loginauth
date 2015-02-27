@@ -149,23 +149,21 @@ class User {
         return $valid;
     }
 
-	public function sendnotification(){
-		$options = array(
-		    'turn_off_ssl_verification' => false,
-		    'protocol' => 'smtp',
-		    'host' => 'api.sendgrid.com',
-		    'endpoint' => '/api/mail.send.json',
-		    'port' => 587,
-		    'url' => null,
-		);
-		$sendgrid = new SendGrid('app34112757@heroku.com', 'ri9aacvv', $options);
-				
-		$message = new SendGrid\Email();
-		$message->addTo('foo@bar.com')->
-		          setFrom('me@bar.com')->
-		          setSubject('Subject goes here')->
-		          setText('Hello World!')->
-		          setHtml('<strong>Hello World!</strong>');
-		$response = $sendgrid->send($message);
+	public function sendnotification($email, $ipaddress, $timelock){
+
+        $sendgridusername = getenv("SENDGRID_USERNAME");
+        $sendgridpassword = getenv("SENDGRID_USERNAME");
+
+        $sendgrid = new SendGrid($sendgridusername, $sendgridpassword);
+
+        $message = new SendGrid\Email();
+        $message->addTo($email)->
+        setFrom('noreply@loginauth.com')->
+        setSubject('Login Lockout')->
+        setText('Login Lockout!')->
+        setHtml('<strong>Account ' . $email .
+                ' has been locked out for about ' . $timelock .
+                ' using ip address ' . $ipaddress . ' !</strong>');
+        $response = $sendgrid->send($message);
 	}
 }
