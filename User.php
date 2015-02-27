@@ -165,6 +165,6 @@ class User {
                 ' has been locked out for about ' . $timelock .
                 ' minutes using ip address ' . $ipaddress . '!</strong>');
         $response = $sendgrid->send($message);
-        var_dump($response);
+        //var_dump($response);
 	}
 }
