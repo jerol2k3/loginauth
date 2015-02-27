@@ -8,8 +8,8 @@
 	
     if(isset($_POST['email']) && isset($_POST['password'])){
     	$logindatetime = date("Y-m-d H:i:s", time());
-		$ipaddress = get_client_ip();		
-		$logininfo = $user->getlogininfo($_POST['email']);		
+		$ipaddress = get_client_ip();
+		$logininfo = $user->getlogininfo($_POST['email']);
 		$loginattempt = $logininfo[0]['loginattempt'];
 		$previouslogindatetime = $logininfo[0]['logindatetime'];
 		$previousipaddress = $logininfo[0]['ipaddress'];
@@ -43,7 +43,10 @@
 		else{
 			if($ipaddress == $previousipaddress){
 				$loginattempt += 1;	
-			}			
+			}
+            else{
+                $loginattempt = 1;
+            }
 			if(count($logininfo) > 0){
 				$user->update($_POST['email'], $_POST['password'], $logindatetime, $ipaddress, $loginattempt);	
 			}

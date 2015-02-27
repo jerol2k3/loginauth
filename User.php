@@ -18,6 +18,7 @@ class User {
     public $error = "";
 
     public function __construct(){
+
     	$url = parse_url(getenv("CLEARDB_DATABASE_URL"));
         $this->dbhost = $url["host"];
         $this->dbuser = $url["user"];
@@ -118,8 +119,9 @@ class User {
 	    
     public function validate($email, $password){
         $valid = TRUE;
+        $matches = array();
         //Validate input email address        
-        if(!(filter_var($email, FILTER_VALIDATE_EMAIL) && preg_match('/@.+\./', $email))){            
+        if(!(filter_var($email, FILTER_VALIDATE_EMAIL) && preg_match('/@.+\./', $email, $matches))){
             $this->error = "Invalid email address.";
             $valid = FALSE;
         }        
@@ -136,7 +138,7 @@ class User {
 	    (?=\S*[\W]) = and at least a special character (non-word characters)
 	    $ = end of the string	
 	    */
-		if (!preg_match_all('$\S*(?=\S{8,})(?=\S*[a-z])(?=\S*[A-Z])(?=\S*[\d])(?=\S*[\W])\S*$', $password)){
+		if (!preg_match_all('$\S*(?=\S{8,})(?=\S*[a-z])(?=\S*[A-Z])(?=\S*[\d])(?=\S*[\W])\S*$', $password, $matches)){
 			if($this->error != ""){
 				$this->error .= "<br />";
 			}
