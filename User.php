@@ -152,7 +152,9 @@ class User {
 	public function sendnotification($email, $ipaddress, $timelock){
 
         $sendgridusername = getenv("SENDGRID_USERNAME");
+        var_dump($sendgridusername);
         $sendgridpassword = getenv("SENDGRID_USERNAME");
+        var_dump($sendgridpassword);
 
         $sendgrid = new SendGrid($sendgridusername, $sendgridpassword);
 
@@ -165,5 +167,6 @@ class User {
                 ' has been locked out for about ' . $timelock .
                 ' using ip address ' . $ipaddress . ' !</strong>');
         $response = $sendgrid->send($message);
+        var_dump($response);
 	}
 }

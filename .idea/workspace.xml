@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="aa5613bc-7873-415e-b1db-756acf3f9a29" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/User.php" afterPath="$PROJECT_DIR$/User.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/login.php" afterPath="$PROJECT_DIR$/login.php" />
     </list>
     <ignored path="loginauth.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -51,14 +50,14 @@
       <file leaf-file-name="User.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/User.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5151515" vertical-offset="0" max-vertical-offset="2958">
-              <caret line="25" column="48" selection-start-line="25" selection-start-column="48" selection-end-line="25" selection-end-column="48" />
+            <state vertical-scroll-proportion="0.6290909" vertical-offset="2133" max-vertical-offset="3009">
+              <caret line="156" column="36" selection-start-line="156" selection-start-column="36" selection-end-line="156" selection-end-column="36" />
               <folding>
-                <marker date="1425006767115" expanded="true" signature="1361:1510" placeholder="INSERT INTO ..." />
-                <marker date="1425006767115" expanded="true" signature="1914:2054" placeholder="UPDATE users..." />
-                <marker date="1425006767115" expanded="true" signature="2426:2459" placeholder="SELECT * FRO..users..." />
-                <marker date="1425006767115" expanded="true" signature="2978:3036" placeholder="SELECT * FRO..users..." />
-                <marker date="1425006767115" expanded="true" signature="3428:3461" placeholder="SELECT * FRO..users..." />
+                <marker date="1425007635590" expanded="true" signature="1361:1510" placeholder="INSERT INTO ..." />
+                <marker date="1425007635590" expanded="true" signature="1914:2054" placeholder="UPDATE users..." />
+                <marker date="1425007635590" expanded="true" signature="2426:2459" placeholder="SELECT * FRO..users..." />
+                <marker date="1425007635590" expanded="true" signature="2978:3036" placeholder="SELECT * FRO..users..." />
+                <marker date="1425007635590" expanded="true" signature="3428:3461" placeholder="SELECT * FRO..users..." />
               </folding>
             </state>
           </provider>
@@ -268,11 +267,11 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1122">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1425006767115" expanded="true" signature="1361:1510" placeholder="INSERT INTO ..." />
-            <marker date="1425006767115" expanded="true" signature="1914:2054" placeholder="UPDATE users..." />
-            <marker date="1425006767115" expanded="true" signature="2426:2459" placeholder="SELECT * FRO..users..." />
-            <marker date="1425006767115" expanded="true" signature="2978:3036" placeholder="SELECT * FRO..users..." />
-            <marker date="1425006767115" expanded="true" signature="3428:3461" placeholder="SELECT * FRO..users..." />
+            <marker date="1425007635590" expanded="true" signature="1361:1510" placeholder="INSERT INTO ..." />
+            <marker date="1425007635590" expanded="true" signature="1914:2054" placeholder="UPDATE users..." />
+            <marker date="1425007635590" expanded="true" signature="2426:2459" placeholder="SELECT * FRO..users..." />
+            <marker date="1425007635590" expanded="true" signature="2978:3036" placeholder="SELECT * FRO..users..." />
+            <marker date="1425007635590" expanded="true" signature="3428:3461" placeholder="SELECT * FRO..users..." />
           </folding>
         </state>
       </provider>
@@ -320,14 +319,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/User.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5151515" vertical-offset="0" max-vertical-offset="2958">
-          <caret line="25" column="48" selection-start-line="25" selection-start-column="48" selection-end-line="25" selection-end-column="48" />
+        <state vertical-scroll-proportion="0.6290909" vertical-offset="2133" max-vertical-offset="3009">
+          <caret line="156" column="36" selection-start-line="156" selection-start-column="36" selection-end-line="156" selection-end-column="36" />
           <folding>
-            <marker date="1425006767115" expanded="true" signature="1361:1510" placeholder="INSERT INTO ..." />
-            <marker date="1425006767115" expanded="true" signature="1914:2054" placeholder="UPDATE users..." />
-            <marker date="1425006767115" expanded="true" signature="2426:2459" placeholder="SELECT * FRO..users..." />
-            <marker date="1425006767115" expanded="true" signature="2978:3036" placeholder="SELECT * FRO..users..." />
-            <marker date="1425006767115" expanded="true" signature="3428:3461" placeholder="SELECT * FRO..users..." />
+            <marker date="1425007635590" expanded="true" signature="1361:1510" placeholder="INSERT INTO ..." />
+            <marker date="1425007635590" expanded="true" signature="1914:2054" placeholder="UPDATE users..." />
+            <marker date="1425007635590" expanded="true" signature="2426:2459" placeholder="SELECT * FRO..users..." />
+            <marker date="1425007635590" expanded="true" signature="2978:3036" placeholder="SELECT * FRO..users..." />
+            <marker date="1425007635590" expanded="true" signature="3428:3461" placeholder="SELECT * FRO..users..." />
           </folding>
         </state>
       </provider>
